@@ -1,0 +1,22 @@
+$engine: 3
+$onesync: on
+name: UPG Default
+version: 0.0.1
+author: MineBill
+description: Simple txAdmin recipe for UPG
+
+variables:
+  dbHost: localhost
+  dbUsername: upg
+  dbPassword: ""
+  dbName: upg_fivem
+
+tasks:
+  - action: download_github
+    url: https://github.com/citizenfx/cfx-server-data/
+    subpath: resources
+    dest: ./resources
+
+  - action: download_file
+    url: https://raw.githubusercontent.com/MineBill/upg-recipe/main/server.cfg
+    path: ./server.cfg
