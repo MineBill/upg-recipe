@@ -6,7 +6,7 @@ dbPassword=""
 dbName="upg_fivem"
 
 query="
-CREATE USER '${dbUsername}'@'${dbHost}' IDENTIFIED VIA|WITH mysql_native_password BY '${dbPassword}';
+CREATE USER '${dbUsername}'@'${dbHost}' IDENTIFIED VIA|WITH mysql_native_password USING '${dbPassword}';
 GRANT ALL privileges ON \`${dbName}\`.* TO 'upg'@'${dbHost}';
 FLUSH PRIVILEGES;
 "

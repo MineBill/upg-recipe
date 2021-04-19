@@ -13,16 +13,12 @@ variables:
 
 tasks:
   - action: download_github
-    url: https://github.com/citizenfx/cfx-server-data/
+    src: https://github.com/citizenfx/cfx-server-data/
     subpath: resources
     dest: ./resources
 
-  - action: download_file
-    url: https://raw.githubusercontent.com/MineBill/upg-recipe/master/server.cfg
-    path: ./server.cfg
-
   - action: download_github
-    url: https://github.com/MineBill/upg-recipe
+    src: https://github.com/MineBill/upg-recipe
     ref: master
     dest: ./tmp/upg-recipe
 
