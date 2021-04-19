@@ -30,7 +30,7 @@ tasks:
 
   - action: connect_database
   - action: query_database
-    file: ./tmp/upg-recipe/plume.sql
+    file: ./tmp/upg-recipe/esx.sql
   - action: query_database
     file: ./tmp/upg-recipe/gcphone.sql
 
