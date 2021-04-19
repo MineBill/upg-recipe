@@ -18,5 +18,5 @@ tasks:
     dest: ./resources
 
   - action: download_file
-    url: https://raw.githubusercontent.com/MineBill/upg-recipe/main/server.cfg
+    url: https://raw.githubusercontent.com/MineBill/upg-recipe/master/server.cfg
     path: ./server.cfg
