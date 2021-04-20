@@ -19,6 +19,10 @@ tasks:
   - action: move_path
     src: ./tmp/upg-recipe/server.cfg
     dest: ./server.cfg
+
+  - action: move_path
+    src: ./tmp/upg-recipe/permissions.cfg
+    dest: ./permissions.cfg
   
   - action: move_path
     src: ./tmp/upg-recipe/default_spawnpoint
@@ -238,7 +242,7 @@ tasks:
 
   ## GCPhone stuff
   - action: download_file
-    url: https://github.com/Re-Ignited-Development/Re-Ignited-Phone/releases/download/V1.5/resources-1.2.zip
+    url: https://github.com/Re-Ignited-Devel opment/Re-Ignited-Phone/releases/download/V1.5/resources-1.2.zip
     path: ./tmp/gcphone.zip
   - action: unzip
     src: ./tmp/gcphone.zip
@@ -258,6 +262,15 @@ tasks:
     file: ./resources/[esx]/esx_status/client/main.lua
     search: 'esx_status:onTick'
     replace: 'Kl_Hud:onTick'
+
+
+  ## vMenu v3.3.1
+  - action: download_file
+    url: https://github.com/TomGrobbe/vMenu/releases/download/v3.3.1/vMenu-v3.3.1.zip
+    path: ./tmp/vMenu.zip
+  - action: unzip
+    src: ./tmp/vMenu.zip
+    dest: ./resources/vMenu
 
 
   ## Final touches
