@@ -28,8 +28,9 @@ tasks:
     src: ./tmp/upg-recipe/default_spawnpoint
     dest: ./resources/default_spawnpoint
 
-  - action: move_path
-    src: ./tmp/upg-recipe/loadingscreen
+  - action: download_github
+    src: https://github.com/MineBill/upg-loadscreen
+    ref: master
     dest: ./resources/loadingscreen
 
   - action: connect_database
@@ -272,11 +273,5 @@ tasks:
     src: ./tmp/vMenu.zip
     dest: ./resources/vMenu
 
-
-  ## Final touches
-  - action: replace_string
-    mode: all_vars
-    file: ./resources/loadingscreen/config.js
-    
   - action: remove_path
     path: ./tmp
