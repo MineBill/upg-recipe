@@ -264,22 +264,6 @@ tasks:
     src: https://github.com/MineBill/No-NPC
     dest: ./resources/no_npc
 
-  ## KL HUD v2
-  - action: download_github
-    src: https://github.com/Kilichi/Kl_HudV2
-    ref: ac8a321ff335706509bdc6122a2984a80082e669
-    dest: ./resources/Kl_HudV2
-
-  - action: replace_string
-    file: ./resources/[esx]/esx_status/client/main.lua
-    search: 'esx_status:onTick'
-    replace: 'Kl_Hud:onTick'
-
-  - action: replace_string
-    mode: all_vars
-    file: 
-      - ./resources/[esx]/es_extended/config.lua
-
   ## vMenu v3.3.1
   - action: download_file
     url: https://github.com/TomGrobbe/vMenu/releases/download/v3.3.1/vMenu-v3.3.1.zip
