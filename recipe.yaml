@@ -251,7 +251,18 @@ tasks:
   - action: move_path
     src: ./tmp/resources-1.2/gcphone
     dest: ./resources/gcphone
-  
+
+
+  - action: download_github
+    src: https://github.com/vortisrd/trew_hud_ui
+    ref: ccfc4e7d8bcae695bdb713a1d8c8a4a3a2391269
+    subpath: ESX
+    dest: ./resources/trew_hud_ui
+
+
+  - action: download_github
+    src: https://github.com/MineBill/No-NPC
+    dest: ./resources/no_npc
 
   ## KL HUD v2
   - action: download_github
