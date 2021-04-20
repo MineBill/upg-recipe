@@ -76,11 +76,6 @@ tasks:
     dest: ./resources/skinchanger
 
   - action: download_github
-    src: https://github.com/HypeLevels/simpledrift
-    ref: 77e378a2b59fcaca7624cb51575b2a3d39e3b635
-    dest: ./resources/simpledrift
-
-  - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: 4ae8aaefd38238e72ff8f36417decb05064cb924
     dest: ./resources/bob74_ipl
