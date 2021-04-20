@@ -5,6 +5,11 @@ version: 0.0.1
 author: MineBill
 description: Simple txAdmin recipe for UPG
 
+variables:
+  - esxMaxWeight: 200
+  - esxPaycheckInterval: 420_000
+  - esxStartingMoney: 50_000
+
 tasks:
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data/
@@ -264,6 +269,10 @@ tasks:
     search: 'esx_status:onTick'
     replace: 'Kl_Hud:onTick'
 
+  - action: replace_string
+    mode: all_vars
+    file: 
+      - ./resources/[esx]/es_extended/config.lua
 
   ## vMenu v3.3.1
   - action: download_file
