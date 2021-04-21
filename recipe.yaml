@@ -241,6 +241,10 @@ tasks:
     ref: ee9c916ebf955abefa3bfdbd20a773122b865a22
     dest: ./resources/[esx]/esx_holdup
 
+  - action: download_github
+    src: https://github.com/EddieK96/Smooth-Crouch-Script
+    dest: ./resources/smooth_crouch_script
+
   ## GCPhone stuff
   - action: download_file
     url: https://github.com/Re-Ignited-Development/Re-Ignited-Phone/releases/download/V1.5/resources-1.2.zip
