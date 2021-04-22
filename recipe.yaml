@@ -241,9 +241,14 @@ tasks:
     ref: ee9c916ebf955abefa3bfdbd20a773122b865a22
     dest: ./resources/[esx]/esx_holdup
 
+  ## Emotes stuff
   - action: download_github
     src: https://github.com/EddieK96/Smooth-Crouch-Script
     dest: ./resources/smooth_crouch_script
+
+  - action: download_github
+    src: https://github.com/andristum/dpemotes
+    dest: ./resources/dpemotes
 
   ## GCPhone stuff
   - action: download_file
